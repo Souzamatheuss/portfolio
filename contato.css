@@ -1,0 +1,50 @@
+html, body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.cor-seg {
+    height: 20px;
+    background-color: #333;
+    margin-top: 20px;
+}

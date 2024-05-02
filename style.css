@@ -1,4 +1,4 @@
-@charset "UTF-9";
+@charset "UTF-8";
 
 * {
     margin: 0;
@@ -74,4 +74,33 @@ article > h2 {
 
 article > p {
     line-height: 1.6;
+}
+
+#itens {
+    background-color: #4b6cb7; /* Cor de fundo do menu */
+    position: absolute; /* Posicionamento absoluto em relação ao cabeçalho */
+    top: 100%; /* Posiciona o menu abaixo do cabeçalho */
+    left: 0; /* Alinha o menu à esquerda */
+    width: 100%; /* Largura total do menu */
+}
+
+#itens ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+#itens ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+}
+
+#itens ul li a {
+    display: block; /* Transforma os links em elementos de bloco para ocupar a largura total */
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    padding: 10px 20px; /* Preenchimento interno dos links */
+    transition: background-color 0.3s ease; /* Efeito de transição para a cor de fundo */
+}
+
+#itens ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo ao passar o mouse sobre os links */
 }

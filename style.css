@@ -3,31 +3,35 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Adicionado para garantir que padding e border não afetem as dimensões dos elementos */
+    box-sizing: border-box;
 }
 
 body, html {
-    background-color: #f8f8f8; /* Alterado para um tom mais claro */
-    font-family: 'Arial', sans-serif; /* Fonte padrão para todo o documento */
-    font-size: 16px; /* Tamanho de fonte padrão */
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
 }
 
 header {
-    background-image: linear-gradient(to right, #4b6cb7, #182848); /* Degradê para o cabeçalho */
-    color: #fff; /* Cor do texto no cabeçalho */
-    padding: 20px 0; /* Espaçamento interno */
+    background-image: linear-gradient(to right, #4b6cb7, #182848);
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 header > h1 {
-    font-size: 36px; /* Tamanho do título aumentado */
-    font-weight: bold; /* Negrito para destaque */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav {
     text-align: center;
-    margin-top: 20px; /* Espaçamento entre o cabeçalho e o menu */
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 nav ul {
@@ -36,7 +40,8 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px; /* Espaçamento entre os itens do menu */
+    margin-right: 20px;
+    color: #fff; /* Mantém a cor do texto como branco */
 }
 
 nav ul li a {
@@ -45,26 +50,28 @@ nav ul li a {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Transição suave para hover */
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #fff; /* Fundo com transparência no hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 main {
     background-color: #fff;
-    margin: 20px auto; /* Margem superior e inferior aumentada para centralizar */
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
 article > h2 {
-    font-size: 24px; /* Tamanho de fonte dos títulos dos artigos */
-    margin-bottom: 10px; /* Espaçamento inferior reduzido */
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 article > p {
-    line-height: 1.6; /* Espaçamento entre linhas aumentado */
+    line-height: 1.6;
 }

@@ -1,81 +1,70 @@
 @charset "UTF-9";
 
-html, body, h1, h2, p {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Adicionado para garantir que padding e border não afetem as dimensões dos elementos */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+body, html {
+    background-color: #f8f8f8; /* Alterado para um tom mais claro */
+    font-family: 'Arial', sans-serif; /* Fonte padrão para todo o documento */
+    font-size: 16px; /* Tamanho de fonte padrão */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-image: linear-gradient(to right, #4b6cb7, #182848); /* Degradê para o cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 20px 0; /* Espaçamento interno */
     text-align: center;
-    padding: 20px 0;
 }
 
-header h1 {
-    font-size: 2rem;
+header > h1 {
+    font-size: 36px; /* Tamanho do título aumentado */
+    font-weight: bold; /* Negrito para destaque */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
 }
 
-#itens ul {
+nav {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento entre o cabeçalho e o menu */
+}
+
+nav ul {
     list-style-type: none;
 }
 
-#itens li {
-    display: inline;
-    margin-right: 20px;
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
 }
 
-#itens a {
-    text-decoration: none;
+nav ul li a {
     color: #fff;
+    text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo com transparência no hover */
 }
 
 main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Margem superior e inferior aumentada para centralizar */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-article {
-    margin-bottom: 20px;
+article > h2 {
+    font-size: 24px; /* Tamanho de fonte dos títulos dos artigos */
+    margin-bottom: 10px; /* Espaçamento inferior reduzido */
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-@media (max-width: 767px) {
-    #itens {
-        display: none;
-        text-align: center;
-    }
-
-    #burguer {
-        display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    #itens ul {
-        display: block;
-    }
-
-    #itens li {
-        display: block;
-        margin: 10px 0;
-    }
+article > p {
+    line-height: 1.6; /* Espaçamento entre linhas aumentado */
 }
